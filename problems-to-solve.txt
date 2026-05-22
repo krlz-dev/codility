@@ -1,0 +1,223 @@
+==============================================================
+PROBLEMS TO SOLVE - TOPTAL INTERVIEW PREP
+==============================================================
+
+SOURCES:
+  [C]  Codility lesson PDFs  (in this folder)
+  [B1] Cracking the Coding Interview, 6th Edition (CTCI)
+  [B2] Data Structures and Algorithms - Narasimha Karumanchi (DSAMC)
+
+GOAL:
+  3 problems per day, increasing difficulty across the week.
+  Time-box each problem to 20 minutes. If unsolved, look at the
+  hint/solution, then re-solve from scratch the next day.
+
+LEGEND:
+  [E] Easy   [M] Medium   [H] Hard
+
+==============================================================
+WEEK 1 - FOUNDATIONS (loops, arrays, strings, counting)
+==============================================================
+
+DAY 1 - Iteration & basic math
+  [E] [C] Iterations.pdf       - BinaryGap
+  [E] [C] Iterations.pdf       - OddOccurrencesInArray
+  [E] [B1] CTCI Ch. 1.1        - Is Unique (chars in a string)
+
+DAY 2 - Arrays
+  [E] [C] 0-Arrays.pdf         - CyclicRotation
+  [M] [C] 0-Arrays.pdf         - OddOccurrencesInArray
+  [E] [B1] CTCI Ch. 1.2        - Check Permutation
+  [E] [B2] DSAMC Arrays Ch.    - "Find pair with sum X" (use hash)
+
+DAY 3 - Counting elements
+  [E] [C] 2-CountingElements   - FrogRiverOne
+  [M] [C] 2-CountingElements   - PermCheck
+  [M] [C] 2-CountingElements   - MissingInteger
+  [M] [B1] CTCI Ch. 1.4        - Palindrome Permutation
+
+DAY 4 - Strings (Toptal favorite)
+  [E] [B1] CTCI Ch. 1.3        - URLify (replace spaces with %20)
+  [M] [B1] CTCI Ch. 1.5        - One Away (1-edit distance)
+  [M] [B1] CTCI Ch. 1.6        - String Compression
+  [M] [B2] DSAMC Strings Ch.   - "Longest substring w/o repeating chars"
+
+DAY 5 - Time complexity & prefix sums
+  [E] [C] 1-TimeComplexity.pdf - FrogJmp
+  [E] [C] 1-TimeComplexity.pdf - TapeEquilibrium  (uses prefix sums)
+  [E] [C] 3-PrefixSums.pdf     - CountDiv
+  [M] [C] 3-PrefixSums.pdf     - GenomicRangeQuery
+  [M] [C] 3-PrefixSums.pdf     - MinAvgTwoSlice
+
+==============================================================
+WEEK 2 - CORE TECHNIQUES (sorting, stacks, greedy)
+==============================================================
+
+DAY 6 - Sorting & searching
+  [E] [C] 4-Sorting.pdf        - Distinct
+  [M] [C] 4-Sorting.pdf        - MaxProductOfThree
+  [M] [C] 4-Sorting.pdf        - Triangle
+  [M] [B1] CTCI Ch. 10.1       - Sorted Merge
+  [M] [B2] DSAMC Sorting Ch.   - "Kth largest element"
+
+DAY 7 - Stacks & Queues
+  [E] [C] 5-Stacks.pdf         - Brackets  (balanced parens)
+  [M] [C] 5-Stacks.pdf         - Fish
+  [M] [C] 5-Stacks.pdf         - StoneWall
+  [M] [B1] CTCI Ch. 3.2        - Stack Min  (O(1) min in a stack)
+  [M] [B1] CTCI Ch. 3.5        - Sort Stack (using only one extra stack)
+
+DAY 8 - Leader / Max slice
+  [M] [C] 6-Leader.pdf         - Dominator
+  [M] [C] 6-Leader.pdf         - EquiLeader
+  [M] [C] 7-MaxSlice.pdf       - MaxProfit
+  [M] [C] 7-MaxSlice.pdf       - MaxDoubleSliceSum  (Kadane variant)
+  [M] [B2] DSAMC Greedy/DP     - "Maximum subarray sum (Kadane)"
+
+DAY 9 - Greedy algorithms
+  [M] [C] 14-GreedyAlgorithms  - MaxNonoverlappingSegments
+  [M] [C] 14-GreedyAlgorithms  - TieRopes
+  [M] [B2] DSAMC Greedy Ch.    - "Activity selection problem"
+  [M] [B2] DSAMC Greedy Ch.    - "Minimum coins for change"
+
+DAY 10 - Math (gcd, primes)
+  [E] [C] 10-Gcd.pdf           - ChocolatesByNumbers
+  [H] [C] 10-Gcd.pdf           - CommonPrimeDivisors
+  [E] [C] 8-PrimeNumbers.pdf   - CountFactors
+  [E] [C] 8-PrimeNumbers.pdf   - MinPerimeterRectangle
+  [M] [C] 9-Sieve.pdf          - CountNonDivisible
+  [M] [C] 9-Sieve.pdf          - CountSemiprimes
+
+==============================================================
+WEEK 3 - ADVANCED (binary search, two pointers, recursion, DP)
+==============================================================
+
+DAY 11 - Binary search
+  [M] [C] 12-BinarySearch.pdf  - MinMaxDivision
+  [H] [C] 12-BinarySearch.pdf  - NailingPlanks
+  [M] [B1] CTCI Ch. 10.3       - Search in Rotated Array
+  [M] [B1] CTCI Ch. 10.4       - Sorted Search, No Size
+  [M] [B2] DSAMC Searching Ch. - "Square root via binary search"
+
+DAY 12 - Two-pointer / sliding window (Caterpillar)
+  [M] [C] 13-Caterpillar.pdf   - AbsDistinct
+  [M] [C] 13-Caterpillar.pdf   - CountDistinctSlices
+  [M] [C] 13-Caterpillar.pdf   - CountTriangles
+  [M] [B2] DSAMC Misc.         - "Three-sum problem"
+  [M] [B2] DSAMC Misc.         - "Container with most water"
+
+DAY 13 - Recursion
+  [E] [C] 11-Fibonacci.pdf     - FibFrog
+  [H] [C] 11-Fibonacci.pdf     - Ladder
+  [E] [B1] CTCI Ch. 8.1        - Triple Step  (climbing stairs)
+  [M] [B1] CTCI Ch. 8.2        - Robot in a Grid  (path counting)
+  [M] [B2] DSAMC Recursion Ch. - "Tower of Hanoi"
+  [M] [B2] DSAMC Recursion Ch. - "Generate all permutations"
+
+DAY 14 - Dynamic Programming
+  [M] [C] 15-DynamicProg.pdf   - NumberSolitaire
+  [H] [C] 15-DynamicProg.pdf   - MinAbsSum
+  [M] [B1] CTCI Ch. 8.3        - Magic Index
+  [M] [B1] CTCI Ch. 8.11       - Coins  (ways to make change)
+  [M] [B2] DSAMC DP Ch.        - "Longest common subsequence"
+  [H] [B2] DSAMC DP Ch.        - "0/1 Knapsack"
+
+==============================================================
+WEEK 4 - DATA STRUCTURES (linked lists, trees, hash, graphs)
+==============================================================
+
+DAY 15 - Linked Lists  (NOT in Codility; pure CTCI/DSAMC)
+  [E] [B1] CTCI Ch. 2.1        - Remove Dups
+  [E] [B1] CTCI Ch. 2.2        - Return Kth to Last
+  [M] [B1] CTCI Ch. 2.5        - Sum Lists  (add two numbers)
+  [M] [B1] CTCI Ch. 2.8        - Loop Detection  (Floyd's cycle)
+  [M] [B2] DSAMC Linked Lists  - "Reverse a linked list"
+  [M] [B2] DSAMC Linked Lists  - "Detect & remove cycle"
+
+DAY 16 - Trees (binary trees, BSTs)
+  [M] [B1] CTCI Ch. 4.2        - Minimal Tree  (sorted array -> BST)
+  [M] [B1] CTCI Ch. 4.3        - List of Depths  (BFS levels)
+  [M] [B1] CTCI Ch. 4.5        - Validate BST
+  [M] [B1] CTCI Ch. 4.8        - First Common Ancestor (LCA)
+  [M] [B2] DSAMC Trees Ch.     - "Inorder/preorder/postorder traversal"
+  [M] [B2] DSAMC Trees Ch.     - "Diameter of a binary tree"
+
+DAY 17 - Hash Tables / Sets
+  [E] [B1] CTCI Ch. 1.1        - Is Unique (revisited via set)
+  [M] [B1] CTCI Ch. 1.2        - Check Permutation (counter approach)
+  [M] [B2] DSAMC Hashing Ch.   - "Two-sum problem"
+  [M] [B2] DSAMC Hashing Ch.   - "Group anagrams together"
+  [M] [B2] DSAMC Hashing Ch.   - "First non-repeating character"
+
+DAY 18 - Graphs (BFS / DFS)
+  [M] [B1] CTCI Ch. 4.1        - Route Between Nodes  (BFS)
+  [M] [B2] DSAMC Graphs Ch.    - "Number of islands"
+  [M] [B2] DSAMC Graphs Ch.    - "Course schedule (topological sort)"
+  [H] [B2] DSAMC Graphs Ch.    - "Dijkstra shortest path"
+
+DAY 19 - Heaps / Priority Queues
+  [M] [B2] DSAMC Heaps Ch.     - "K largest elements in a stream"
+  [M] [B2] DSAMC Heaps Ch.     - "Merge K sorted lists"
+  [M] [B2] DSAMC Heaps Ch.     - "Median of a data stream"
+
+DAY 20 - Bit Manipulation
+  [E] [C] Iterations.pdf       - BinaryGap (revisit)
+  [M] [B1] CTCI Ch. 5.1        - Insertion  (bit insert)
+  [M] [B1] CTCI Ch. 5.3        - Flip Bit to Win
+  [M] [B1] CTCI Ch. 5.6        - Conversion  (bits to flip)
+  [M] [B2] DSAMC Bits Ch.      - "Count set bits"
+  [M] [B2] DSAMC Bits Ch.      - "Single number (XOR trick)"
+
+==============================================================
+INTERVIEW SIMULATION - DO THESE THE WEEK BEFORE
+==============================================================
+
+Run as 60-min mock: pick 3 problems, time yourself, talk aloud.
+
+SET A  (easy/medium/medium)
+  1. [E] [C]  CyclicRotation
+  2. [M] [C]  Brackets
+  3. [M] [C]  MaxProfit
+
+SET B  (medium/medium/hard)
+  1. [M] [B1] CTCI 1.6 - String Compression
+  2. [M] [C]  GenomicRangeQuery
+  3. [H] [C]  NumberSolitaire
+
+SET C  (medium/medium/hard)
+  1. [M] [C]  TieRopes
+  2. [M] [B1] CTCI 4.5 - Validate BST
+  3. [H] [B2] DSAMC - "0/1 Knapsack"
+
+==============================================================
+ESSENTIAL TOPICS FOR TOPTAL (cheat list)
+==============================================================
+
+If you only have a few days, cover these in order:
+
+  1. Arrays + hash maps (Counter, set)         [C, B1 Ch.1, B2]
+  2. Two-pointer / sliding window              [C 13, B2 Misc]
+  3. String manipulation                       [B1 Ch.1, B2]
+  4. Stacks (parentheses, monotonic stack)     [C 5, B1 Ch.3]
+  5. Greedy (interval scheduling, coins)       [C 14, B2 Greedy]
+  6. Binary search (incl. on answer)           [C 12, B1 Ch.10]
+  7. Recursion + memoization                   [C 11, B1 Ch.8]
+  8. BFS/DFS on trees & graphs                 [B1 Ch.4, B2]
+  9. Basic DP (1D and 2D)                      [C 15, B1 Ch.8, B2 DP]
+ 10. Bit manipulation (XOR tricks)             [B1 Ch.5, B2 Bits]
+
+==============================================================
+PRACTICE PROTOCOL  (per problem)
+==============================================================
+
+  1. READ the problem twice. Restate it in your own words.
+  2. WRITE 1-2 example inputs/outputs on paper.
+  3. THINK aloud for up to 5 minutes - no code yet.
+  4. PICK a brute-force approach. State its time complexity.
+  5. CODE the brute force, run mentally on the examples.
+  6. OPTIMIZE only if time allows.
+  7. TEST edge cases: empty input, single item, max size, duplicates.
+  8. EXPLAIN final solution as if presenting to the interviewer.
+
+If stuck past 20 minutes -> read the hint, NOT the full solution.
+If still stuck after hint -> read solution, mark for retry tomorrow.

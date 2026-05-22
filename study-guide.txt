@@ -1,0 +1,192 @@
+CODILITY STUDY GUIDE
+====================
+
+Your study folder contains:
+  - A complete Codility lessons collection (the numbered PDFs)
+  - Cracking the Coding Interview, 6th Edition (CTCI) - the classic
+    interview-prep book
+
+These map directly to the kinds of problems being solved (parking cost,
+binary reduction, no-three-in-a-row, longest sentence, domino pyramid, etc.).
+
+----------------------------------------------------------------------
+DIRECT MATCHES — PROBLEMS PRACTICED AND THE RELEVANT PDFs
+----------------------------------------------------------------------
+
+Parking cost (loops, ceiling division)
+    -> Iterations.pdf, 1-TimeComplexity.pdf
+
+Binary string -> steps to 0
+    -> Iterations.pdf, 1-TimeComplexity.pdf
+
+"aabb" no-3-in-a-row
+    -> 14-GreedyAlgorithms.pdf  (KEY)
+
+Longest sentence word count
+    -> 0-Arrays.pdf, Iterations.pdf
+
+Domino pyramid
+    -> 14-GreedyAlgorithms.pdf + general brute force
+
+John's pairs (pyramid)
+    -> 2-CountingElements.pdf
+
+
+----------------------------------------------------------------------
+SUGGESTED READING ORDER
+----------------------------------------------------------------------
+
+FOUNDATIONS (start here)
+    1. Iterations.pdf            - loops, while/for patterns
+    2. 1-TimeComplexity.pdf      - Big-O, why some loops are slow
+    3. 0-Arrays.pdf              - indexing, slicing, iterating
+
+CORE TECHNIQUES
+    4. 2-CountingElements.pdf    - Counter, dictionaries
+    5. 3-PrefixSums.pdf          - fast range sums
+    6. 4-Sorting.pdf             - sort-based tricks
+    7. 5-Stacks.pdf              - stack/queue patterns
+
+SPECIALIZED PATTERNS
+    8. 6-Leader.pdf              - majority element
+    9. 7-MaxSlice.pdf            - Kadane's algorithm (max subarray)
+   10. 8-PrimeNumbers.pdf        - primes basics
+   11. 9-Sieve.pdf               - Sieve of Eratosthenes
+   12. 10-Gcd.pdf                - Euclid's algorithm
+   13. 11-Fibonacci.pdf          - recursion + DP intro
+   14. 12-BinarySearch.pdf       - O(log n) search
+   15. 13-CaterpillarMethod.pdf  - two-pointer / sliding window
+
+ADVANCED (most relevant to the trickier problems)
+   16. 14-GreedyAlgorithms.pdf   - "pick the larger pile" type strategies
+   17. 15-DynamicProgramming.pdf - the heavy stuff
+
+
+----------------------------------------------------------------------
+CRACKING THE CODING INTERVIEW (CTCI) - 6th Edition
+----------------------------------------------------------------------
+
+File:
+  Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-
+  and-Solutions.pdf
+
+Why it matters:
+  The most widely-used software-engineering interview-prep book.
+  189 worked problems with detailed solutions. Covers everything from
+  basic data structures up through system design and behavioral
+  questions. Use it ALONGSIDE the Codility lessons, not instead of them.
+
+How to use it well:
+  1. Read the short concept overview at the start of each chapter.
+  2. ATTEMPT each problem on your own first (15-30 min).
+  3. Only then read the solution. Compare to your approach.
+  4. If you got it wrong, redo it from scratch a day later.
+
+Key chapters mapped to Codility topics you have:
+  Ch. 1  Arrays & Strings        -> 0-Arrays.pdf, longest-sentence task
+  Ch. 2  Linked Lists            -> (not in Codility set; still important)
+  Ch. 3  Stacks & Queues         -> 5-Stacks.pdf
+  Ch. 4  Trees & Graphs          -> (advanced; come back to this)
+  Ch. 5  Bit Manipulation        -> binary-reduction task you solved
+  Ch. 6  Math & Logic Puzzles    -> parking-cost type problems
+  Ch. 7  Object-Oriented Design  -> general software interview skill
+  Ch. 8  Recursion & DP          -> 11-Fibonacci.pdf, 15-DynamicProgramming.pdf
+  Ch. 9  System Design           -> senior-level; later
+  Ch. 10 Sorting & Searching     -> 4-Sorting.pdf, 12-BinarySearch.pdf
+  Ch. 11 Testing                 -> useful soft skill
+  Ch. 16 Moderate problems       -> good after finishing easy ones
+  Ch. 17 Hard problems           -> tackle last
+
+CTCI chapters relevant to today's solved problems:
+  Parking cost            -> Ch. 6  (math/logic) + Ch. 1 (strings)
+  Binary -> steps to 0    -> Ch. 5  (bit manipulation)
+  "aabb" no-3-in-a-row    -> Ch. 1  (strings) + Ch. 8 (recursion/greedy)
+  Longest sentence words  -> Ch. 1  (arrays & strings)
+  Domino pyramid          -> Ch. 8  (recursion / brute force)
+  Pair-everything check   -> Ch. 1  + hashing concepts (Ch. 1 intro)
+
+Suggested CTCI reading sequence:
+  Start: Ch. 1 (Arrays & Strings) - foundational, biggest payoff
+  Then:  Ch. 3 (Stacks & Queues), Ch. 5 (Bit Manipulation),
+         Ch. 6 (Math & Logic)
+  After: Ch. 8 (Recursion & DP), Ch. 10 (Sorting & Searching)
+  Later: Ch. 2 (Linked Lists), Ch. 4 (Trees & Graphs)
+  Advanced: Ch. 16, Ch. 17, then Ch. 9 (System Design)
+
+
+----------------------------------------------------------------------
+RECOMMENDED STARTING POINTS
+----------------------------------------------------------------------
+
+For Codility-style problem solving, prioritize these three first:
+
+    1. Iterations.pdf
+       Solidifies the while/for/ceiling-division patterns used
+       in parking and binary-reduction tasks.
+
+    2. 14-GreedyAlgorithms.pdf
+       Directly explains the "pick the larger pile" strategy
+       seen in the "aabb" no-three-consecutive task.
+
+    3. 2-CountingElements.pdf
+       Useful for any "do counts match up?" problem
+       (such as pair-checking in pyramid tasks).
+
+In parallel with the Codility lessons, start CTCI Chapter 1
+(Arrays & Strings) - it reinforces the same fundamentals and
+expands them with classic interview problems.
+
+
+----------------------------------------------------------------------
+QUICK REFERENCE - KEY PYTHON TRICKS LEARNED SO FAR
+----------------------------------------------------------------------
+
+CEILING DIVISION (no math.ceil needed):
+    hours = -(-minutes // 60)
+    # or:  (minutes + 59) // 60
+    # or:  from math import ceil; ceil(minutes / 60)
+
+BINARY STRING -> INT:
+    n = int("1011", 2)         # -> 11
+    # Python ints have NO size limit (arbitrary precision)
+    # For very long strings (>4300 chars), either:
+    #   import sys; sys.set_int_max_str_digits(0)
+    # or avoid int() entirely and work with the string
+
+WHILE LOOPS - TRUTHY ZERO:
+    while n:           # same as: while n > 0  (for non-negative n)
+    while A or B:      # at least one is non-zero
+
+SPLITTING ON MULTIPLE DELIMITERS:
+    import re
+    re.split(r'[.!?]', text)
+    # or replace then split:
+    text.replace('?', '.').replace('!', '.').split('.')
+
+LSTRIP LEADING ZEROS (binary normalization):
+    S = S.lstrip('0')
+    if not S: return 0
+
+ITERTOOLS FOR BRUTE FORCE:
+    from itertools import permutations, product
+    permutations(range(6))            # all orderings
+    product([0,1], repeat=6)          # all on/off combos (2^6)
+    product(*((d, d[::-1]) for d in items))   # both rotations each
+
+TUPLE REVERSAL:
+    (a, b)[::-1]   # -> (b, a)
+
+
+----------------------------------------------------------------------
+NEXT STEPS
+----------------------------------------------------------------------
+
+- Pick one PDF, read it, then try its practice tasks on Codility.
+- In parallel, read the matching CTCI chapter and attempt 2-3 of
+  its problems WITHOUT looking at the solution first.
+- After each solved task, write down the technique used (greedy?
+  counting? prefix sums? bit manipulation?) so patterns become
+  recognizable.
+- When stuck, identify which technique the problem hints at before
+  writing code.
+- Re-solve any problem you got wrong the next day from scratch.
