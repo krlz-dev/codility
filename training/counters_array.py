@@ -68,3 +68,26 @@ def solution(N, A):
             m = max(counters)
             counters = [m]*N
     return counters
+
+
+'''
+This other solution is about defining the values of current_max and floor as the current set of values in array not to write 
+it in an array, a virtual value
+'''
+
+def solution2(N, A):
+    counters = [0]*N
+    current_max = 0
+    floor = 0
+
+    for X in A:
+        if 1 <= X <= N:
+            idx = X - 1
+            counters[idx] = max(counters[idx], floor) + 1
+            current_max = max(current_max, counters[idx])
+        else:
+            floor = current_max
+
+    return [max(c, floor) for c in counters]
+
+
